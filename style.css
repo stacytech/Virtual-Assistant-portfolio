@@ -46,7 +46,7 @@ header{
   margin-bottom:70px;
 }
 
-/* LOGO - small spin with pause, no glow */
+/* LOGO - small spin with pause*/
 #logo{
   font-size:1.4rem;
   font-weight:800;
@@ -288,7 +288,7 @@ footer{
   transform:translateY(-2px) scale(1.05);
 }
 
-/* MOBILE */
+
 @media(max-width:900px){
   header{
     flex-direction:column;
@@ -310,9 +310,21 @@ footer{
   }
 }
 
-/* BACKGROUND GRADIENT ANIMATION */
+
 @keyframes gradientBG {
   0% {background-position:0% 50%;}
   50% {background-position:100% 50%;}
   100% {background-position:0% 50%;}
+}
+
+
+.contact-card a {
+  color: var(--muted);         
+  text-decoration: none;       
+  transition: 0.3s;
+}
+
+.contact-card a:hover {
+  color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 10px var(--accent-2);
 }
